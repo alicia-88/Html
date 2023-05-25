@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "ComingSoon";
+    src: url("ComingSoon-Regular.ttf");
+}
+
+html {
+    font-family: "ComingSoon";
+}
+
+ol>:first-child {
+    color: blue;
+}
+
+ol>:last-child {
+    color: grey;
+}
+
+ol>li>ul>li {
+    color: black
+}
+
+ol>:first-child>ul>li {
+    color: red;
+}
+
+ol>:first-child li:last-of-type {
+    color: green;
+}
+p> span> span{
+    color: pink;
+}
