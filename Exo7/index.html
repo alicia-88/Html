@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Votre identité</legend>
+            <ol>
+                <li><label for="fname">Nom:</label>
+                    <input type="text" name="fname" id="fname" placeholder="Nom">
+                </li>
+                <li>
+                    <label for="lname">Prénom:</label>
+                    <input type="text" name="lname" id="lname" placeholder="Prénom">
+                </li>
+                <li>
+                    <label for="email">Adresse mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Adresse mail">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Adresse de livraison</legend>
+            <ol>
+                <li><label for="adress">Adresse: </label>
+                    <textarea name="adress" id="adress" cols="15" rows="5"></textarea>
+                </li>
+                <li>
+                    <label for="code">Code postal:</label>
+                    <input type="number" name="code" id="code" placeholder="Code postal">
+                </li>
+                <li><label for="city">Ville:</label>
+                    <input type="text" name="city" id="city" placeholder="Ville">
+                </li>
+            </ol>
+        </fieldset>
+        <fieldset>
+            <legend>Informations de réglement</legend>
+            <ol>
+                <li>Type de carte bancaire:
+                    <ul>
+                        <li><input type="radio" name="cb" id="cbvisa" value="cbvisa">
+                            <label for="cbvisa">Visa</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="cb" id="cbmastercard" value="cbmastercard">
+                            <label for="cbmastercard">Mastercard</label>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li>
+                    <label for="cbnumber">
+                        Numéro de carte:
+                    </label>
+                    <input type="number" name="cbnumber" id="cbnumber" placeholder="Numéro de carte">
+            
+                </li>
+                <li>
+                    <label for="security">
+                        Code de sécurité: 
+                    </label>
+                    <input type="number" name="security" id="security" placeholder="Code de sécurité">
+                </li>
+                <li>
+                    <label for="name">Nom du titulaire: </label>
+                    <input type="text" name="name" id="name" placeholder="Nom du titulaire">
+                </li>
+            </ol>
+
+        </fieldset>
+        <div>
+           <button type="submit">J'achète !</button>
+        </div>
+    </form>
+</body>
+
+</html>

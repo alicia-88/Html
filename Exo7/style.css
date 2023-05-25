@@ -1,0 +1,12 @@
+ul > li {
+    list-style: none;
+}
+fieldset:nth-of-type(1), fieldset:nth-of-type(1)>legend{
+    background-color: rgb(37,116,169);
+}
+fieldset:nth-of-type(2), fieldset:nth-of-type(2)>legend{
+    background-color: rgb(154,18,179);
+}
+fieldset:nth-of-type(3), fieldset:nth-of-type(3)>legend{
+    background-color: rgb(219,10,91);
+}
