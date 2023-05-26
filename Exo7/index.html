@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <title>Exo 7</title>
 </head>
 
 <body>
-    <form action="">
+    <form>
         <fieldset>
             <legend>Votre identité</legend>
 
-            <p><label for="fname">1. Nom :</label>
-                <input type="text" name="fname" id="fname" placeholder="Nom">
+            <p>
+                <label for="lname">1. Nom : <abbr title="required">*</abbr> </label>
+                <input type="text" name="lname" id="lname" placeholder="Nom" required>
             </p>
             <p>
-                <label for="lname">2 .Prénom :</label>
-                <input type="text" name="lname" id="lname" placeholder="Prénom">
+                <label for="fname">2 .Prénom :</label>
+                <input type="text" name="fname" id="fname" placeholder="Prénom">
             </p>
             <p>
                 <label for="email">3. Adresse mail :</label>
-                <input type="email" name="email" id="email" placeholder="Adresse mail">
+                <input type="email" name="email" id="email" placeholder="example@gmail.com">
             </p>
 
         </fieldset>
@@ -34,8 +35,8 @@
                 <textarea name="adress" id="adress" cols="15" rows="5"></textarea>
             </p>
             <p>
-                <label for="code">2. Code postal :</label>
-                <input type="number" name="code" id="code" placeholder="Code postal">
+                <label for="code">2. Code postal : </label>
+                <input type="text" name="code" id="code" placeholder="Code postal">
             </p>
             <p><label for="city">3. Ville :</label>
                 <input type="text" name="city" id="city" placeholder="Ville">
@@ -44,47 +45,42 @@
         </fieldset>
         <fieldset>
             <legend>Informations de réglement</legend>
-            
-                <p>
-                <fieldset>
-                    <legend>1. Type de carte bancaire :</legend>
 
-                    <ul>
-                        <li><input type="radio" name="cb" id="cbvisa" value="cbvisa">
-                            <label for="cbvisa">Visa</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="cb" id="cbmastercard" value="cbmastercard">
-                            <label for="cbmastercard">Mastercard</label>
-                        </li>
-                    </ul>
-                </fieldset>
+            <fieldset>
+                <legend>1. Type de carte bancaire :</legend>
 
+                <ul>
+                    <li>
+                        <input type="radio" name="cb" id="cbvisa" value="cbvisa">
+                        <label for="cbvisa">Visa</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="cb" id="cbmastercard" value="cbmastercard">
+                        <label for="cbmastercard">Mastercard</label>
+                    </li>
+                </ul>
 
-                </p>
-                <p>
-                    <label for="cbnumber">
-                        2. Numéro de carte :
-                    </label>
-                    <input type="number" name="cbnumber" id="cbnumber" placeholder="Numéro de carte">
+            </fieldset>
+            <p>
+                <label for="cbnumber">2. Numéro de carte : </label>
+                <input type="text" name="cbnumber" id="cbnumber" placeholder="Numéro de carte">
 
-                </p>
-                <p>
-                    <label for="security">
-                        3. Code de sécurité :
-                    </label>
-                    <input type="number" name="security" id="security" placeholder="Code de sécurité">
-                </p>
-                <p>
-                    <label for="name">4. Nom du titulaire : </label>
-                    <input type="text" name="name" id="name" placeholder="Nom du titulaire">
-                </p>
-            
+            </p>
+            <p>
+                <label for="cbsecurity">3. Code de sécurité : </label>
+                <input type="text" name="cbsecurity" id="cbsecurity" placeholder="Code de sécurité">
+            </p>
+            <p>
+                <label for="cbname">4. Nom du titulaire : </label>
+                <input type="text" name="cbname" id="cbname" placeholder="Nom du titulaire">
+            </p>
 
         </fieldset>
+
         <div>
             <button type="submit">J'achète !</button>
         </div>
+        
     </form>
 </body>
 
