@@ -2,46 +2,57 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
+
 body div {
     flex: 0 0 50%;
 }
+
 .container {
     display: flex;
     width: 100%;
 }
+
 .container>div {
     display: flex;
-    flex: 0 0 50%;
+    flex: 1;
 }
+
 .container-1 {
     flex-direction: column;
 }
+
 .grey {
     background-color: #cacaca;
 }
+
 .blue {
     background-color: #0000ff;
-    flex-basis: 20%;
+    flex: 1;
 }
-.red{
+
+.red {
     background-color: #ff0000;
-    flex-basis: 80%;
+    flex: 3;
 }
+
 .purple {
-background-color: #800080;
-flex-basis: 60%;
+    background-color: #800080;
+    flex: 4;
 }
-.yellow{
-background-color: #ffff00;
-flex-basis: 20%;
+
+.yellow {
+    background-color: #ffff00;
+    flex: 2;
 }
-.pink{
-background-color: #ffc0cb;
-flex-basis: 20%;
+
+.pink {
+    background-color: #ffc0cb;
+    flex: 2;
 }

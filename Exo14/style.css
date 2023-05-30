@@ -8,52 +8,54 @@ body {
     display: flex;
     flex-direction: column;
 }
-body div {
-    flex: 0 0 50%;
+body>div {
+    flex: 1;
 }
 .grey {
     background-color: #cacaca;
 }
 .blue {
     background-color: #0000ff;
-    flex-basis: 25%;
+    flex:1;
 }
 .red{
     background-color: #ff0000;
-    flex-basis: 75%;
+    flex:3;
 }
 .purple {
 background-color: #800080;
-flex-basis: 60%;
+flex:5;
 }
 .yellow{
 background-color: #ffff00;
-flex-basis: 20%;
+flex:2;
 }
 .pink{
 background-color: #ffc0cb;
-flex-basis: 20%;
+flex:2;
 }
 .aqua {
     background-color: #00ffff;
-    flex-basis: 70%;
+    flex: 4;
 }
 .magenta {
     background-color: #ff00ff;
+    flex: 2;
 }
 .container{
     display: flex;
 }
 .container-1 {
-    flex-basis: 60%;
+    flex:3;
     display: flex;
     flex-direction: column;
 }
 .container-2 {
-    flex-basis: 20%;
+    flex:1;
     display: flex;
 }
 .container-3 {
+    flex: 1;
     display: flex;
     flex-direction: column;
 }

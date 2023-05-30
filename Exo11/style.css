@@ -10,13 +10,13 @@ body {
 }
 .blue {
     background-color: #0000ff;
-    flex-grow: 1;
+    flex: 1;
 }
 .green{
     background-color:#008000;
-    flex-basis: 50%;
+    flex: 3;
 }
 .red{
     background-color: #ff0000;
-    flex-basis: 40%;
+    flex: 3;
 }
